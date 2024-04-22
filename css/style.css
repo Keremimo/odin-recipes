@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
 
 body {
@@ -8,7 +8,7 @@ body {
   align-items: center;
   min-height: 60rem;
   max-height: 120rem;
-  background: linear-gradient(white, rgb(100, 44, 18));
+  background: linear-gradient(#BED7DC, #F1EEDC);
 }
 
 .description {
@@ -24,8 +24,9 @@ body {
   border: 3px groove rgba(51, 89, 90, 20%);
   border-radius: 35%;
   padding: 2rem;
-  font-family: 'Jacquard 24';
-  font-size: 7rem;
+  font-family: 'Courgette';
+  font-style: bold;
+  font-size: 5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -35,15 +36,20 @@ body {
 }
 
 .intro {
+  padding: 1rem 0;
+  font-family: 'Courgette';
+  border-top: 1px solid black;
   font-weight: 400;
   text-align: center;
   width: 40%;
+  border-bottom: 1px solid black;
+  border-radius: 10%;
 }
 .recipes>a {
   text-align: center;
-
 }
 .recipes {
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -60,5 +66,20 @@ footer {
   position: sticky;
   padding-top: 1rem;
   border-top: 1px solid black;
-  margin-top: 2rem
+  margin-top: 1rem;
+  font-family: Courgette;
+}
+a {
+  font-family: Courgette;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #F1EEDC;
 }
