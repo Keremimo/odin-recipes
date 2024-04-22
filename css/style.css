@@ -1,15 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
 
 body {
-  font-family: "Noto Sans", sans-serif;
-  background: linear-gradient(white, lightblue);
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  min-height: 60rem;
+  max-height: 120rem;
+  background: linear-gradient(white, rgb(100, 44, 18));
+}
+
+.description {
+  font-family: 'Noto Sans', sans-serif;
+  width: 80%;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .title {
+  background-color: rgba(51, 89, 90, 10%);
   text-align: center;
+  border: 3px groove rgba(51, 89, 90, 20%);
+  border-radius: 35%;
+  padding: 2rem;
+  font-family: 'Jacquard 24';
+  font-size: 7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-name {
+  text-align: left;
 }
 
 .intro {
   font-weight: 400;
   text-align: center;
+  width: 40%;
+}
+.recipes>a {
+  text-align: center;
+
+}
+.recipes {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-self: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  flex-direction: column-reverse;
+  flex-grow: 0;
+  position: sticky;
+  padding-top: 1rem;
+  border-top: 1px solid black;
+  margin-top: 2rem
 }
