@@ -23,11 +23,13 @@ body {
   flex-direction: row;
   align-items: center;
 }
-.contain-desc img {
+img {
+  min-width: 25rem;
   width: 50%;
   object-fit: cover;
   border-radius: 30%;
 }
+
 .title {
   background-color: #e5ddc5;
   text-align: center;
@@ -106,11 +108,6 @@ a:hover {
   align-items: center;
 }
 
-.contain-ingrdnts img {
-  width: 50%;
-  object-fit: cover;
-  border-radius: 30%;
-}
 .ingredients, .saus {
   font-family: "Noto Sans", sans-serif;
 width: 80%;
@@ -129,4 +126,18 @@ padding: 0rem 1rem;
   width: 70%;
   flex-direction: row;
   align-items: center;
+}
+
+@media (max-width: 65rem) {
+  * {
+    flex-wrap: nowrap;
+  }
+  .contain-desc, .contain-ingrdnts, footer {
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
