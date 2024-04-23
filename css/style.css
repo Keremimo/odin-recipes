@@ -1,42 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap");
 
 body {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   min-height: 60rem;
   max-height: 120rem;
-  background: linear-gradient(#BED7DC, #F1EEDC);
+  background: linear-gradient(#bed7dc, #f1eedc);
 }
 
 .description {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   width: 80%;
   font-size: 1.1rem;
   padding: 0 1rem;
 }
 .contain-desc {
   width: 70%;
-display: flex;
-flex-direction: row;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .contain-desc img {
   width: 50%;
-  object-fit:cover;
+  object-fit: cover;
   border-radius: 30%;
 }
 .title {
-  background-color: rgba(51, 89, 90, 10%);
+  background-color: #e5ddc5;
   text-align: center;
   border: 3px groove rgba(51, 89, 90, 20%);
   border-radius: 35%;
-  padding: 2rem;
-  font-family: 'Courgette';
+  padding: 3rem;
+  font-family: "Courgette";
   font-style: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -46,16 +46,16 @@ align-items: center;
 }
 
 .intro {
-  padding: 1rem 0;
-  font-family: 'Courgette';
-  border-top: 1px solid black;
+  padding: 2rem 0;
+  font-family: "Courgette";
+  border-top: 2px solid black;
   font-weight: 400;
   text-align: center;
   width: 40%;
-  border-bottom: 1px solid black;
+  border-bottom: 2px groove black;
   border-radius: 10%;
 }
-.recipes>a {
+.recipes > a {
   text-align: center;
 }
 .recipes {
@@ -91,5 +91,42 @@ a:link {
   text-decoration: none;
 }
 a:hover {
-  color: #F1EEDC;
+  color: #f1eedc;
+}
+
+.allcolors {
+  background: linear-gradient(#b3c8cf, #bed7dc, #f1eedc, #e5ddc5);
+}
+
+.contain-ingrdnts {
+  display: flex;
+  padding: 1rem 2rem;
+  width: 70%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contain-ingrdnts img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 30%;
+}
+.ingredients, .saus {
+  font-family: "Noto Sans", sans-serif;
+width: 80%;
+font-size: 1.1rem;
+padding: 0rem 1rem;
+}
+.ing-list {
+  border: 1px groove black;
+  border-radius: 1rem;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.warm-ings {
+  display: flex;
+  padding: 3rem 2rem;
+  width: 70%;
+  flex-direction: row;
+  align-items: center;
 }
