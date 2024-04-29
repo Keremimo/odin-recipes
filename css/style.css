@@ -17,11 +17,15 @@ body {
   font-size: 1.1rem;
   padding: 0 1rem;
 }
-.contain-desc {
+.contain-desc, .recipe-contain {
   width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.ingredient {
+  padding-right: 2rem;
 }
 img {
   min-width: 25rem;
@@ -71,6 +75,7 @@ img {
 
 footer {
   display: flex;
+  width: 100%;
   align-self: center;
   text-align: center;
   flex-direction: column-reverse;
